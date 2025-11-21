@@ -3,8 +3,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    let etiquetas = ['foto', 'payaso', 'rojo', 'azul', 'techo', 'cielo', 
-    'foco', 'luz']
+    let etiquetas = ['fotos', 'payaso', 'rojo', 'azul', 'techo', 'cielo', 'foco', 'luz']
 
     for(let etiqueta of etiquetas) {
       await queryInterface.bulkInsert('etiquetas', [{
